@@ -25,7 +25,7 @@ function App() {
     },
   });
 
-  useHostStyles(app)
+  useHostStyles(app, app?.getHostContext())
 
   if (toolOutput?.movies) {
     return <MoviesList movies={toolOutput.movies} />;
