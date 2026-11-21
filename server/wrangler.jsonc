@@ -10,12 +10,21 @@
 	"observability": {
 		"enabled": true
 	},
-	"compatibility_flags": ["nodejs_compat"],
+	"compatibility_flags": [
+		"nodejs_compat"
+	],
 	"assets": {
-	"directory": "dist",
-	"binding": "ASSETS",
+		"directory": "dist",
+		"binding": "ASSETS",
 	},
 	"previews": {},
+	"kv_namespaces": [
+		{
+			"binding": "FLASHCARDS_KV",
+			"id": "c5540b4c635d4f768f8c73bec745dd2f",
+			"remote": true
+		}
+	],
 	/**
 	 * Smart Placement
 	 * https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
